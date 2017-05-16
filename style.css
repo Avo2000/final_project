@@ -1,0 +1,18 @@
+body {
+}
+
+svg {
+    background: url("https://cdna.artstation.com/p/assets/images/images/002/028/262/large/sudawan-corness-sonic-logo-background-copy.jpg?1456199950") ;
+  background-size: 100%;
+  background-position: 0px -20px;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}

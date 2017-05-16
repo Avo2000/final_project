@@ -1,6 +1,208 @@
 var namespace = "http://www.w3.org/2000/svg"
 
 // Write your code here!
+var Sonic =
+makeImage("http://vignette1.wikia.nocookie.net/trollpasta/images/e/e7/Sonic_the_hedgehog_by_filthyphantom-d6jllb5.png/revision/latest?cb=20140921172555", 165,8, 20, 50);
+var ring1 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 10,25,15, 30)
+var ring2 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 10,75,15, 30)
+var ring3 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 30,44,15, 30)
+var ring4 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 57,56,15, 30)
+var ring5 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 90,50,15, 30)
+var ring6 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 70,10,15, 30)
+var ring7 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 120,40,15, 30)
+var ring8 = makeImage("https://vignette2.wikia.nocookie.net/sonic/images/0/00/Ring-Sonic-Generations.png/revision/latest?cb=20150525163151", 147,32,15, 30)
+var ring9 = makeImage("http://vignette1.wikia.nocookie.net/mpimpfs/images/3/36/MPI_Warp_Pipe.png/revision/latest?cb=20120318155908", 110,25,40, 120)
+var ring10 = makeImage("http://circlesmagazinelasvegas.com/online/wp-content/uploads/2017/02/mario-pipe-upside-down.png", 80,-40,20, 100)
+var ring11 = makeImage("http://circlesmagazinelasvegas.com/online/wp-content/uploads/2017/02/mario-pipe-upside-down.png", 0,-40,20, 100)
+var ring12 = makeImage("http://vignette1.wikia.nocookie.net/mpimpfs/images/3/36/MPI_Warp_Pipe.png/revision/latest?cb=2012031815590", 30,25,40, 120)
+addEventListener("keydown", moveSonic)
+function moveSonic(event) {
+   if(event.key == "ArrowUp") {
+        move(Sonic,0,-5)
+     varx1 = getX(sonic)
+     if(x1 > 300) {
+       setX(sonic,10,0)
+
+  }
+}
+  if(event.key == "ArrowDown") {
+       move(Sonic,0,5)
+    varx1 = getX(sonic)
+    if(x1 > 300) {
+      setX(sonic,10,0)
+
+  }
+}
+  if(event.key == "ArrowLeft") {
+       move(Sonic,-5,0)
+    varx1 = getX(sonic)
+    if(x1 > 300) {
+      setX(sonic,10,0)
+}
+}
+if(event.key == "ArrowRight") {
+     move(Sonic,5,0)
+  varx1 = getX(sonic)
+  if(x1 > 300) {
+    setX(sonic,10,0)
+}
+}
+}
+  function moverings() {
+  move(ring1,1,0)
+  move(ring2,1,0)
+  move(ring3,1,0)
+  move(ring4,1,0)
+  move(ring5,1,0)
+  move(ring6,1,0)
+  move(ring7,1,0)
+  move(ring8,1,0)
+  move(ring9,1,0)
+  move(ring10,1,0)
+  move(ring11,1,0)
+  move(ring12,1,0)
+  var x1 = getX(ring1)
+  if(x1 > 300) {
+
+    setX(ring1,10,0)
+  }
+  var x2 = getX(ring2)
+  if(x2 > 300) {
+
+    setX(ring2,10,0)
+         }
+  var x3 = getX(ring3)
+  if(x3 > 300) {
+    setY(ring3,10,0)
+  }
+     var x4 = getX(ring4)
+  if(x4 > 300) {
+    setX(ring4,10,0)
+    var x5 = getX(ring5)
+  }
+    if(x5 > 300) {
+
+      setX(ring1,10,0)
+    }
+    var x6 = getX(ring6)
+    if(x7 > 300) {
+
+      setX(ring2,10,0)
+           }
+    var x7 = getX(ring7)
+    if(x7 > 300) {
+      setY(ring7,10,0)
+    }
+       var x8 = getX(ring4)
+    if(x8 > 300) {
+      setX(ring8,10,0)
+  }
+  var x9 = getX(ring9)
+  if(x9 > 300) {
+
+    setX(ring9,10,0)
+  }
+  var x10 = getX(ring10)
+  if(x10 > 300) {
+
+    setX(ring10,10,0)
+  }
+  var x11 = getX(ring11)
+  if(x11 > 300) {
+
+    setX(ring11,10,0)
+  }
+  var x12 = getX(ring12)
+  if(x12 > 300) {
+
+    setX(ring12,10,0)
+  }
+  if (collides(Sonic,ring1)) {
+    // Do something!
+  score = score + 1
+scoreText.innerHTML = score
+  } else {
+    // Do something else!
+  }
+  if (collides(Sonic,ring2)) {
+    // Do something!
+      score = score + 1
+  scoreText.innerHTML = score
+  } else {
+    // Do something else!
+  }
+  if (collides(Sonic,ring3)) {
+    // Do something!
+  score = score + 1
+  scoreText.innerHTML = score
+  } else {
+    // Do something else!
+  }
+  if (collides(Sonic,ring4)) {
+    // Do something!
+  score = score + 1
+  scoreText.innerHTML = score
+  } else {
+    // Do something else!
+  }
+  if (collides(Sonic,ring5)) {
+    // Do something!
+  scoreText.innerHTML = score
+  score = score + 1
+  } else {
+    // Do something else!
+}
+  if (collides(Sonic,ring6)) {
+    // Do something!
+  score = score + 1
+scoreText.innerHTML = score
+  } else {
+    // Do something else!
+  }
+  if (collides(Sonic,ring7)) {
+    // Do something!
+  score = score + 1
+  scoreText.innerHTML = score
+  } else {
+    // Do something else!
+  }
+  if (collides(Sonic,ring8)) {
+    // Do something!
+  score = score + 1
+  scoreText.innerHTML = score
+  } else {
+    // Do something else!
+  }
+  if (collides(ring9, Sonic)) {
+    // Do something!
+    makeText("GameOver",40,60,30,60)
+  } else {
+    // Do something else!
+  }
+  if (collides(ring10, Sonic)) {
+    // Do something!
+  makeText("GameOver",40,60,30,60)
+  } else {
+    // Do something else!
+  }
+  if (collides(ring11, Sonic)) {
+    // Do something!
+makeText("GameOver",40,60,30,60)
+  } else {
+    // Do something else!
+  }
+  if (collides(ring12, Sonic)) {
+    // Do something!
+  makeText("GameOver",40,60,30,60)
+  } else {
+    // Do something else!
+  }
+  requestAnimationFrame(moverings)
+}
+moverings()
+
+var score = 0
+var scoreText = makeText(score, 10, 20, 20, "sans-serif", "red")
 
 // DO NOT EDIT CODE BELOW THIS LINE!
 function getX(shape) {
@@ -70,7 +272,7 @@ function setY(shape, y) {
     var yDiff = parseFloat(shape.getAttribute("y2")) - parseFloat(shape.getAttribute("y1"))
     shape.setAttribute("y1", y)
     shape.setAttribute("y2", y + yDiff)
-  } 
+  }
 }
 
 function move(shape, dx, dy) {
@@ -108,7 +310,7 @@ function makeCircle(cx, cy, r, fill, opacity) {
   circle.setAttribute("r", r)
   circle.setAttribute("fill", fill)
   circle.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(circle)
   return circle
@@ -122,7 +324,7 @@ function makeRect(x, y, width, height, fill, opacity) {
   rect.setAttribute("height", height)
   rect.setAttribute("fill", fill)
   rect.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(rect)
   return rect
@@ -136,7 +338,7 @@ function makeEllipse(cx, cy, rx, ry, fill, opacity) {
   ellipse.setAttribute("ry", ry)
   ellipse.setAttribute("fill", fill)
   ellipse.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(ellipse)
   return ellipse
@@ -151,7 +353,7 @@ function makeLine(x1, y1, x2, y2, stroke, strokeWidth, opacity) {
   line.setAttribute("stroke", stroke)
   line.setAttribute("stroke-width", strokeWidth)
   line.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(line)
   return line
@@ -164,7 +366,7 @@ function makePolyline(points, stroke, strokeWidth, opacity) {
   polyline.setAttribute("stroke-width", strokeWidth)
   polyline.setAttribute("opacity", opacity)
   polyline.setAttribute("fill", "none")
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(polyline)
   return polyline
@@ -175,7 +377,7 @@ function makePolygon(points, fill, opacity) {
   polygon.setAttribute("points", points)
   polygon.setAttribute("opacity", opacity)
   polygon.setAttribute("fill", fill)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(polygon)
   return polygon
@@ -190,7 +392,7 @@ function makeText(message, x, y, fontSize, fontFamily, fill, opacity) {
   text.setAttribute("font-family", fontFamily)
   text.setAttribute("fill", fill)
   text.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(text)
   return text
@@ -204,7 +406,7 @@ function makeImage(url, x, y, width, height, opacity) {
   image.setAttribute("width", width)
   image.setAttribute("height", height)
   image.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(image)
   return image
@@ -221,7 +423,7 @@ function collides(shape1, shape2) {
   } else {
     throw "Oops, that kind of shape isn't supported by the collide function!"
   }
-  
+
   var xMin, xMax, yMin, yMax
   if (shape2.hasAttribute("x")) {
     xMin = getX(shape2)
@@ -246,7 +448,7 @@ function collides(shape1, shape2) {
   } else {
     throw "Oops, that kind of shape isn't supported by the collide function!"
   }
-  return (centerX > xMin && 
+  return (centerX > xMin &&
           centerX < xMax &&
          centerY > yMin &&
          centerY < yMax)
